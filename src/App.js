@@ -30,12 +30,12 @@ class App extends Component {
     };
     const url = "https://post-a-form.herokuapp.com/api/movies/";
     fetch(url, config)
-      .then(res => res.json())
-      .then(res => {
-        if (res.error) {
-          alert(res.error);
+      .then(response => response.json())
+      .then(response => {
+        if (response.error) {
+          alert(response.error);
         } else {
-          alert(`Film ajouté avec l'ID ${res}!`);
+          alert(`Film ajouté avec l'ID ${response.id}!`);
         }
       }).catch(e => {
         console.error(e);
