@@ -1,4 +1,4 @@
-.FormMovie, textarea {
+.FormMovie {
   width: 400px;
   margin: 0 auto;
   text-align: left;
@@ -23,4 +23,8 @@
 
 .FormMovie .form-data input:not([type="submit"]) {
   flex-grow: 1;
+}
+
+textaera {
+  width: 234px;
 }
